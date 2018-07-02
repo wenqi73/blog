@@ -1,2 +1,2 @@
-# blog
-nodejs + react
+# blog-redux
+NodeJs, Redux, Redux-Form
