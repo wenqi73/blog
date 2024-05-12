@@ -255,6 +255,7 @@ function Avatar({
 }
 
 export function Header() {
+  // let isHomePage = usePathname() === '/'
   let isHomePage = false
 
   let headerRef = useRef<React.ElementRef<'div'>>(null)

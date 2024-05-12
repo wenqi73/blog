@@ -133,17 +133,17 @@ export default function Projects() {
             </div>
             {/*<Card.Description>{bookmark.description}</Card.Description>*/}
             <p className="relative z-10 mt-8 flex w-full justify-between gap-x-4 text-sm font-medium text-zinc-400 transition">
-              <span>{/*{new URL(bookmark.href).host}*/}</span>
+              <span className="flex items-center gap-x-2 opacity-0 transition-opacity group-hover:opacity-100">
+                <LinkIcon className="h-4 w-4" />
+                {new URL(bookmark.href).host}
+              </span>
               <span className="flex items-center">
                 <span className="ml-2">
-                  {new Date(Number(bookmark.addDate) * 1000).toLocaleDateString(
-                    'en-US',
-                    {
-                      day: 'numeric',
-                      month: 'short',
-                      year: 'numeric',
-                    },
-                  )}
+                  {new Date(bookmark.addDate).toLocaleDateString('en-US', {
+                    day: 'numeric',
+                    month: 'short',
+                    year: 'numeric',
+                  })}
                 </span>
               </span>
             </p>

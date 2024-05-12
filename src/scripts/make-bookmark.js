@@ -33,10 +33,13 @@ function main() {
         children.push({
           name: linkMatch[4],
           icon: linkMatch[3],
-          addDate: linkMatch[2],
+          addDate: Number(linkMatch[2]) * 1000,
           href: linkMatch[1],
         })
       }
+
+      // sort by date desc
+      children = children.sort((a, b) => b.addDate - a.addDate)
 
       groups.push({
         group: groupName,
