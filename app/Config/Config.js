@@ -1,1 +1,0 @@
-export const target = process.env.NODE_ENV == 'production' ? 'http://localhost:3000/' : 'http://localhost:3000/'; //目标网站
