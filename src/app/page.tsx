@@ -250,6 +250,8 @@ function Photos() {
             <Image
               src={image}
               alt=""
+              sizes="(min-width: 640px) 36rem, 22rem"
+              quality={100}
               className="absolute inset-0 h-full w-full object-cover"
             />
           </div>
